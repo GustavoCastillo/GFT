@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test GFT</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="asset/style.css" type="text/css">
+</head>
+
+<body>
+    <h1>Cash Register</h1>
+    <main>
+        <div class="content">
+            <div class="form-row">
+                <label for="price">Enter Price</label>
+                <input type="text" name="price" id="price" placeholder="e.g: 100.00">
+            </div>
+            <div class="form-row">
+                <label for="cash">Enter Cash</label>
+                <input type="text" name="cash" id="cash" placeholder="e.g: 100.00">
+            </div>
+            <div class="form-row">
+                <button class="btn" id="change" onclick="main.amountChage()">Change</button>
+                <button class="btn" onclick="main.getAmount()">Day Resume</button>
+                <a href="index.html" class="btn">Back</a>
+            </div>
+            <div class="message hidden">
+                <p class="result"></p>
+            </div>
+            <div class="day-summary hidden">
+                <div>
+                    <h2>Initial Cash : </h2>
+                    <p class="initial-cash"></p>
+                </div>
+                <div>
+                    <h2>Sold Amount : </h2>
+                    <p class="sold-amount"></p>
+
+                </div>
+                <div>
+                    <h2>Total Sold  : </h2>
+                    <p class="total-sell"></p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
